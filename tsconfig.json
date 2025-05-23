@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "es2016"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": ".build",
+    "rootDir": "./",
+    "sourceMap": true,
+    "target": "es6",
+    "skipLibCheck": true,
+    "baseUrl": "src",
+    "paths": {
+      "@types/*": ["types/*"]
+    },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*"],
+  "ts-node": {
+    "files": true
+  }
+}
